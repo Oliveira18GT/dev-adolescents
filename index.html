@@ -3,45 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2</title>
+    <title>Aula 4</title>
 
 </head>
 <body>
 
-    <h3></h3>
+    <h1>Formulário dos lindos</h1>
+    <hr>
 <form action="#" method="post">
 
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" placeholder="Seu nome.." required>
+    <label for="nome"><h2>Nome:</h2></label>
+    <input type="text" id="nome" placeholder="Seu nome completo">
     <br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="seuemail@gmail.com">
+    <label for="email"><h2>E-mail:</h2></label>
+    <input type="email" id="email" placeholder="seuemail@email.com">
     <br><br>
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" required>
+    <label for="senha"><h2>Senha:</h2>(min 6, só letras e números):</label>
+    <input type="password" id="senha" pattern="[a-zA-Z0-9]{6,}" placeholder="Mínimo 6 caracteres.." required>
     <br><br>
-    <label for="mensagem">Mensagem:</label>
-    <textarea name="mensagem" id="mensagem" cols="18" rows="2" placeholder="Escreva aqui.."></textarea>
-    <br><br>
-    <label for="cidade">Cidade:</label>
-    <select name="cidade" id="cidade">
-        <option value="">Selecione..</option>
-        <option value="sl">São Leopoldo</option>
-        <option value="nh">Novo Hamburgo</option>
-        <option value="cb">Campo Bom</option>
-        <option value="mgo">Montenegro</option>
-    </select>
-    <fieldset>
-        <legend>Gênero:</legend>
-        <input type="radio" id="masc" name="genero" value="M"> 
-        <label for="masc">Masculino</label>
-        <input type="radio" id="fem" name="genero" value="F">
-        <label for="fem">Feminino</label>
-        <input type="radio" id="pfr" name="genero" value="P">
-        <label for="pfr">Prefiro não responder</label>
-    </fieldset>
+    <label for="idade"><h2>Idade (13 a 99 anos)</h2></label>
+    <input type="number" id="idade" min="13" max="99" required>
 
-    <input type="button" value="Entrar">
 
 </form>
 

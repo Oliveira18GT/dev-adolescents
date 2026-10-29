@@ -10,9 +10,19 @@
     <div class="Título">
         <td><h1>Formulário dos lindos</h1></td>
     </div>
-    <style>
-        .Título {color: rgb(190, 21, 21);}
-    </style>
+        <style>
+    body {
+        max-width: 800px;
+        margin: 0 auto;    
+        text-align: center;
+    }
+    table {
+        margin: 0 auto;
+    }
+    .Título {
+        color: rgb(211, 34, 34);
+    }
+        </style>
     <hr>
     <table border="5" cellpadding="1" cellspacing="0">
         <td><h2>Tabela de pessoas</h2></td>
@@ -88,6 +98,7 @@
         <input type="email" id="email" placeholder="seuemail@email.com" required>
         <br><br>
         <label for="senha"><h2>Senha:</h2>(min 6, só letras e números):</label>
+        <br>
         <input type="password" id="senha" pattern="[a-zA-Z0-9]{6,}" placeholder="Mínimo 6 caracteres.." required>
         <br><br>
         <label for="cidade"><h2>Cidade:</h2></label>
@@ -116,6 +127,5 @@
         <button type="submit"><strong>Enviar</strong></button>
 
 </form>
-
 </body>
 </html>

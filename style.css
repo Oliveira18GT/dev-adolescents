@@ -1,10 +1,11 @@
 :root{
-    --cor-fundo: #dce8f3;
-    --cor-card: rgb(89, 86, 255);
+    --cor-fundo: #95c1eb;
+    --cor-card: rgb(17, 13, 255);
     --cor-borda: black;
     --cor-botao: #8125eb;
-    --cor-hover: rgb(8, 150, 119);
+    --cor-hover: rgb(223, 13, 13);
     --cor-texto: rgb(255, 255, 255);
+    --cor-principal: #ec0653;
 
     --espacamento: 20px;
     --arredondamento: 12px;
@@ -14,12 +15,38 @@
     box-sizing: border-box;
 }
 body{
-    
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor-fundo);
     margin: 0;
     padding: 30px;
 }
+.topo{
+    border: 2px solid var(--cor-borda);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--cor-card);
+    border-radius: var(--arredondamento);
+}
+.topo h1{
+    color: var(--cor-principal);
+}
+nav a{
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--cor-principal);
+}
+/* .card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--espacamento);
+    padding: 70px 8%;
+    background-color: linear-gradient(120deg, #312e81, #0f172a);
+} */
 header{
     text-align: center;
     margin-bottom: 40px;

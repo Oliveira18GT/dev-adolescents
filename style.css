@@ -7,7 +7,7 @@
     --cor-texto: rgb(255, 255, 255);
     --cor-principal: #ec0653;
 
-    --espacamento: 20px;
+    --espacamento: 15px;
     --arredondamento: 12px;
     --transicao: 0.3s;
 }
@@ -28,6 +28,7 @@ body{
     padding: 20px 8%;
     background-color: var(--cor-card);
     border-radius: var(--arredondamento);
+    gap: var(--espacamento);
 }
 .topo h1{
     color: var(--cor-principal);
@@ -71,6 +72,8 @@ button{
     border-radius: 6px;
     cursor: pointer;
     transition: var(--transicao);
+    text-decoration: none;
+    font-size: 16px;
 }
 button:hover{
     background-color: var(--cor-hover);
